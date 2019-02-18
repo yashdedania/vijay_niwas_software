@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VIJAY NIWAS RECEIPT</title>
+
+	<style>
+        .centered {
+            text-align: center;
+        }
+
+        .underlined {
+            text-decoration: underline;
+        }
+
+        .datatable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .datatable td {
+            margin: 0px;
+            border: 1px solid #000;
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1 class="centered underlined">VIJAY NIWAS RECEIPT</h1>
+<h2 class="centered">{{customer_det[0]}}</h2>
+
+<p style="font-size:20px;"><b>ARRIVAL DATE :</b> {{customer_det[1]}}</p>
+<p style="font-size:20px;"><b>DEPARTURE DATE :</b> {{customer_det[2]}}</p>
+
+<p style="font-size:17px;"><b>CONTACT NO :</b> {{customer_det[6]}}</p>
+
+<p style="font-size:17px;"><b>ROOM NO :</b> {{customer_det[3]}}</p>
+<p style="font-size:17px;"><b>PERSON COUNT :</b> {{customer_det[4]}}</p>
+
+<p style="font-size:18px;"><b>AMOUNT :</b> {{customer_det[5]}}</p>
+
+<br><br><br>
+<p style="font-size:20px; text-align:right"><b><u>SIGNATURE (MANAGER)</u></b></p>
+
+<!--<table class="datatable">
+ {% for row in table %}
+ <tr>
+ {% for cell in row %}
+ <td>{{ cell }}</td>
+ {% endfor %}
+ </tr>
+ {% endfor %}
+</table>
+
+<h2 class="centered">Paragraphs</h2>
+
+{% for paragraph in paragraphs %}
+<p>{{ paragraph }}</p>
+{% endfor %}-->
+
+</body>
+</html>
